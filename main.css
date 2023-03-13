@@ -1,9 +1,11 @@
-/* должна быть, как утилита */
+/* должна быть в общем проекте, как утилита */
 ul{
     list-style-type: none;
 }
 /* добавить в CSS */
 .header__theme-list {
+    /* display: none;
+        обычно используется с JavaScript для скрытия и отображения элементов без их удаления и повторного создания. */
     display: none;
         display: flex;
         gap: 12px; 
@@ -17,14 +19,14 @@ ul{
     /* font-family: var(); */
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     color: #fd5103;
 }
 .header__theme-dark {
     /* font-family: var(); */
     font-weight: 400;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
     color: #5f6775;
 }
 .toggle-button {
@@ -33,13 +35,18 @@ ul{
     height: 20px;
     margin: 0;
 
-    vertical-align: top;
+    /* задает вертикальное выравнивание встроенного поля,
+        встроенного блока */
+    /* vertical-align: top; */
+ 
 
     background: #ffffff;
-    border: 0.604701px solid #fd5103;
+    border: 0.6px solid #fd5103;
     border-radius: 20px;
     outline: none;
     cursor: pointer;
+
+/* сбрасываем  стиля браузера для элемента, включая старые версии браузеров */
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -69,6 +76,6 @@ ul{
 }
 
 .toggle-button:checked {
-    border: 0.604701px solid #fff;
+    border: 0.6px solid #fff;
     background-color: #fd5103;
 }
