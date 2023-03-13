@@ -1,3 +1,8 @@
+:root {
+    --hello-color: #0d23a0;
+    --first-color: #9b0f0f;
+    --second-color: #024309;
+}
 /* должна быть в общем проекте, как утилита */
 ul{
     list-style-type: none;
@@ -52,7 +57,7 @@ ul{
     -moz-appearance: none;
     appearance: none;
 
-    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    transition: all 250ms cubic-bezier(.4, 0, .2, 1);
 }
 
 .toggle-button::after {
@@ -67,8 +72,11 @@ ul{
 
     transform: translateX(0);
 
-    transition: all 0.3s cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    transition: all 250ms cubic-bezier(.4, 0, .2, 1);
 }
+
+/* Псевдокласс :checked - элементы ввода  для флажков или переключателей,
+которые находятся во включенном состоянии. */
 
 .toggle-button:checked::after {
     transform: translateX(calc(100% + 3px));
@@ -78,4 +86,21 @@ ul{
 .toggle-button:checked {
     border: 0.6px solid #fff;
     background-color: #fd5103;
+}
+
+h1{
+    color: var(--hello-color);
+}
+h2 {
+    color: var(--first-color);
+}
+h3 {
+    color: var(--second-color);
+}
+
+.dark-theme{
+    background-color: #202025;
+    --hello-color:#a9ed93;
+    --first-color:#ddeb74;
+    --second-color:#22b3a6;
 }
