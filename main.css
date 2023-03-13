@@ -46,7 +46,7 @@ ul{
     outline: none;
     cursor: pointer;
 
-/* сбрасываем  стиля браузера для элемента, включая старые версии браузеров */
+/* сбрасываем  стиля браузера для элемента */
 
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -71,7 +71,7 @@ ul{
 }
 
 .toggle-button:checked::after {
-    transform: translateX(calc(100% + 3.9px));
+    transform: translateX(calc(100% + 3px));
     background-color: #fff;
 }
 
